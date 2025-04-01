@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mensajería Instantánea</title>
+    <!-- Enlaces a hojas de estilo -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <div id="contenido">
+        <div class="container">
+            <!-- Título principal -->
+            <h1>Mensajería Instantánea</h1>
+            
+            <div class="row">
+                <!-- Columna para el formulario de envío de mensajes -->
+                <div class="six columns">
+                    <form id="formulario">
+                        <label for="tweet">Inserta el mensaje:</label>
+                        <textarea id="tweet" class="u-full-width" placeholder="Escribe tu mensaje aquí..."></textarea>
+                        <input type="submit" class="button u-full-width button-primary" value="Agregar">
+                    </form>
+                </div>
+                
+                <!-- Columna para la lista de mensajes -->
+                <div class="six columns">
+                    <h2>Mensajes</h2>
+                    <div id="lista-tweets"></div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Fin de #contenido -->
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>
